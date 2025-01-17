@@ -14,8 +14,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b backdrop-blur bg-background/95 supports-[backdrop-filter]:bg-background/80">
-      <div className="container px-2 h-16 mx-auto text-sm flex flex-wrap justify-between items-center">
+    <nav className="sticky min-h-10 top-0 z-50 w-full border-b backdrop-blur bg-background/95 supports-[backdrop-filter]:bg-background/80">
+      <div className="container p-3 mx-auto text-sm flex flex-wrap justify-between items-center">
 
         {/* Logo and Name */}
         <div className="flex gap-2 items-center">
