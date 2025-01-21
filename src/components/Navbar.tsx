@@ -13,6 +13,27 @@ const Navbar = () => {
     setMenu(!menu);
   };
 
+  const handleClick = (link: string) => {
+    link && document.getElementById(link)?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  const NavItems = () => {
+    return (
+      navItems.map((item, index) => (
+        <a
+          href={"#" + item.label}
+          key={index}
+          className="font-medium select-none cursor-pointer hover:underline underline-offset-8"
+          onClick={(e) => {
+            e.preventDefault();
+            handleClick(item.label);
+          }}>
+          {item.label}
+        </a>
+      ))
+    )
+  }
+
   return (
     <nav className="sticky min-h-10 top-0 z-50 w-full border-b backdrop-blur bg-background/95 supports-[backdrop-filter]:bg-background/80">
       <div className="container p-3 mx-auto text-sm flex flex-wrap justify-between items-center">
@@ -61,13 +82,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-const NavItems = () => {
-  return (
-    navItems.map((item, index) => (
-      <li key={index} className="font-medium select-none cursor-pointer hover:underline underline-offset-8">
-        {item.label}
-      </li>
-    ))
-  )
-}

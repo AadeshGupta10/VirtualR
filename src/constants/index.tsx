@@ -80,7 +80,7 @@ export const checklistItems = [
 export const pricingOptions = [
   {
     title: "Free",
-    price: "$0",
+    price: "₹0",
     features: [
       "Private board sharing",
       "5 Gb Storage",
@@ -90,7 +90,7 @@ export const pricingOptions = [
   },
   {
     title: "Pro",
-    price: "$10",
+    price: "₹800",
     features: [
       "Private board sharing",
       "10 Gb Storage",
@@ -100,7 +100,7 @@ export const pricingOptions = [
   },
   {
     title: "Enterprise",
-    price: "$200",
+    price: "₹6,000",
     features: [
       "Private board sharing",
       "Unlimited Storage",

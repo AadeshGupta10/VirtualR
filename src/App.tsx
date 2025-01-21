@@ -8,17 +8,26 @@ import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 
 const App = () => {
+
   return (
     <ThemeProvider>
-      <Navbar />
+      <Navbar/>
       <div className="container px-2 mx-auto scroll-smooth">
         <HeroSection />
-        <Features />
-        <Workflow />
-        <Pricing />
-        <Testimonials />
+        <div id="Features">
+          <Features />
+        </div>
+        <div id="Workflow">
+          <Workflow />
+        </div>
+        <div id="Pricing">
+          <Pricing />
+        </div>
+        <div id="Testimonials">
+          <Testimonials />
+        </div>
       </div>
-        <Footer />
+      <Footer />
     </ThemeProvider>
   );
 };
